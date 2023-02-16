@@ -1,0 +1,21 @@
+.header__heading {
+    color: teal;
+}
+
+.header__button {
+    margin: 10px;
+    font-family: "Lato", sans-serif;
+    padding: 10px;
+}
+
+.header__button:hover {
+    background-color: hsl(208, 100%, 93%);
+}
+
+.header__photo {
+    width: 200px;
+}
+
+.header__paragraph {
+    text-align: justify;
+}
