@@ -1,0 +1,22 @@
+.table {
+    width: 100%;
+    border-collapse: collapse;
+    padding: 20px;
+    margin: 20px;
+}
+
+.table__caption {
+    caption-side: bottom;
+    text-align: right;
+    margin: 10px;
+}
+
+.table__cell {
+    border: 1px solid black;
+    padding: 20px;
+}
+
+.table__header {
+    background-color: hsl(180, 100%, 30%);
+    font-weight: normal;
+}

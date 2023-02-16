@@ -15,6 +15,8 @@
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="CSS/style.css">
     <link rel="stylesheet" href="CSS/header.css">
+    <link rel="stylesheet" href="CSS/table.css">
+    <link rel="stylesheet" href="CSS/container.css">
 </head>
 
 <body class="body">
@@ -44,39 +46,41 @@
                 muzyka ludowa mojego regionu, czyli <b>Kaszub.</b>
             </p>
         </article>
-        <table class="table">
-            <caption>Moje uczestnictwo w zespołach</caption>
-            <tr>
-                <th scope="row">Nazwa zespołu</th>
-                <th scope="row">Rok dołączenia</th>
-                <th scope="row">Rok odejścia</th>
-            </tr>
-            <tr>
-                <th scope="col">Stokrotki</th>
-                <td>2015</td>
-                <td>2020</td>
-            </tr>
-            <tr>
-                <th scope="col">Kaszubski zespół pieśni i tańca</th>
-                <td>2018</td>
-                <td></td>
-            </tr>
-            <tr>
-                <th scope="col">Bandonia</th>
-                <td>2019</td>
-                <td>2020</td>
-            </tr>
-            <tr>
-                <th scope="col">Lilium</th>
-                <td>2021</td>
-                <td></td>
-            </tr>
-            <tr>
-                <th scope="col">Diakonia</th>
-                <td>2021</td>
-                <td>2022</td>
-            </tr>
-        </table>
+        <div class="container">
+            <table class="table">
+                <caption class="table__caption">Moje uczestnictwo w zespołach</caption>
+                <tr>
+                    <th scope="row" class="table__cell table__header">Nazwa zespołu</th>
+                    <th scope="row" class="table__cell table__header">Rok dołączenia</th>
+                    <th scope="row" class="table__cell table__header">Rok odejścia</th>
+                </tr>
+                <tr>
+                    <th scope="col" class="table__cell table__header">Stokrotki</th>
+                    <td class="table__cell">2015</td>
+                    <td class="table__cell">2020</td>
+                </tr>
+                <tr>
+                    <th scope="col" class="table__cell table__header">Kaszubski zespół pieśni i tańca</th>
+                    <td class="table__cell">2018</td>
+                    <td class="table__cell"></td>
+                </tr>
+                <tr>
+                    <th scope="col" class="table__cell table__header">Bandonia</th>
+                    <td class="table__cell">2019</td>
+                    <td class="table__cell">2020</td>
+                </tr>
+                <tr>
+                    <th scope="col" class="table__cell table__header">Lilium</th>
+                    <td class="table__cell">2021</td>
+                    <td class="table__cell"></td>
+                </tr>
+                <tr>
+                    <th scope="col" class="table__cell table__header">Diakonia</th>
+                    <td class="table__cell">2021</td>
+                    <td class="table__cell">2022</td>
+                </tr>
+            </table>
+        </div>
     </section>
 </body>
 
