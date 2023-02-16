@@ -15,3 +15,7 @@
 .header__photo {
     width: 200px;
 }
+
+.header__otherColour {
+    color: crimson;
+}
