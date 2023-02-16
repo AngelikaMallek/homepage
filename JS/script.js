@@ -1,12 +1,28 @@
-console.log("Cześć!");
-let buttonRemove = document.querySelector(".js-buttonRemove");
-let buttonChange = document.querySelector(".js-buttonChange");
-let heading = document.querySelector(".js-heading");
-buttonRemove.addEventListener("click", () => {
-    heading.remove();
-    buttonRemove.remove();
-    buttonChange.remove();
-});
-buttonChange.addEventListener("click", () => {
-    heading.classList.toggle("header__otherColour");
-});
+{
+    const buttonRemove = document.querySelector(".js-buttonRemove");
+    const buttonChange = document.querySelector(".js-buttonChange");
+    const heading = document.querySelector(".js-heading");
+    const welcome = () => {
+        console.log("Cześć!");
+    }
+
+    const remove = () => {
+        heading.remove();
+        buttonRemove.remove();
+        buttonChange.remove();
+    }
+
+    const change = () => {
+        heading.classList.toggle("header__otherColour");
+    }
+
+    const init = () => {
+        buttonRemove.addEventListener("click", remove);
+        buttonChange.addEventListener("click", change);
+
+        welcome();
+    }
+
+    init();
+
+}
