@@ -5,3 +5,12 @@
 .aboutMe__heading {
     color: teal;
 }
+
+.aboutMe__unorderedList {
+    text-align: justify;
+    list-style-type: square;
+}
+
+.aboutMe__listElement {
+    padding: 10px;
+}
