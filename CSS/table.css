@@ -2,7 +2,6 @@
     width: 100%;
     border-collapse: collapse;
     padding: 20px;
-    margin: 20px;
 }
 
 .table__caption {
@@ -19,4 +18,12 @@
 .table__header {
     background-color: hsl(180, 100%, 30%);
     font-weight: normal;
+}
+
+.table__row:nth-child(even) {
+    background-color: #ddd;
+}
+
+.table__row:hover {
+    background-color: #eee;
 }
