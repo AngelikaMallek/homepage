@@ -1,10 +1,10 @@
 import { StyledList, ListItem, Span } from "./styled";
 
-const List = () => (
+const List = ({contentList}) => (
     <StyledList>
         <ListItem>
             <Span>
-                test
+                {contentList}
             </Span>
         </ListItem>
     </StyledList>

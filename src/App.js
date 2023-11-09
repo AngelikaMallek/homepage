@@ -9,11 +9,19 @@ function App() {
       <Header />
       <Section
         title={"My skillset includes 🛠️"}
-        body={<List />}
+        body={
+          <List 
+            contentList={"Semantic & accessible HTML"}
+          />
+        }
         />
         <Section
         title={"What I want to learn next 🚀"}
-        body={<List />}
+        body={
+          <List 
+            contentList={"React Context"}
+          />
+        }
         />
     </Container>
   );
