@@ -2,11 +2,12 @@ import styled from "styled-components";
 import person from "./person.jpg";
 
 export const StyledHeader = styled.header`
-
+    margin-top: 115px;
+    display: flex;
+    gap: 66px;
 `;
 
-export const Wrapper = styled.div`
-    margin-top: 115px;
+export const WrapperImage = styled.div`
     width: 398px;
     height: 398px;
     border-radius: 50%;
@@ -15,3 +16,7 @@ export const Wrapper = styled.div`
     background-position: center top;
     background-size: cover;
 `;
+
+export const WrapperDescription = styled.div`
+`;
+

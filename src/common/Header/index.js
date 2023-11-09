@@ -1,9 +1,10 @@
-import { Wrapper, StyledHeader } from "./styled";
+import { WrapperImage, StyledHeader, WrapperDescription } from "./styled";
 
 const Header = () => {
     return(
         <StyledHeader>
-            <Wrapper />
+            <WrapperImage />
+            <WrapperDescription>test</WrapperDescription>
         </StyledHeader>
     )
 }
