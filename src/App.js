@@ -1,8 +1,11 @@
 import Container from "./common/Container";
+import Header from "./common/Header";
 
 function App() {
   return (
-    <Container>test</Container>
+    <Container>
+      <Header />
+    </Container>
   );
 }
 
