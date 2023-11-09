@@ -20,4 +20,5 @@ export const Heading = styled.h2`
 `;
 
 export const Body = styled.div`
+    margin: 32px;
 `;
