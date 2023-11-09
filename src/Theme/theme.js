@@ -9,5 +9,6 @@ export const theme = {
         littleGrey: 'rgba(209, 213, 218, 0.30)',
         scienceBlue: '#0366D6',
         black: '#000000',
+        slateGray: '#6E7E91',
     }
 }
