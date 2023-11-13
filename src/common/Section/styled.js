@@ -21,3 +21,24 @@ export const Heading = styled.h2`
 
 export const Body = styled.div`
 `;
+
+export const StyledList = styled.ul`
+    list-style: none;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 8px;
+    padding: 30px 32px;
+`;
+
+export const ListItem = styled.li`
+    color: ${({theme}) => theme.colors.scienceBlue};
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 140%;
+    letter-spacing: 0.9px;
+`;
+
+export const Span = styled.span`
+    color: ${({theme}) => theme.colors.slateGray};
+    padding: 0 16px;
+`;
