@@ -1,6 +1,7 @@
 export const theme = {
     breakpoints: {
-        mobile: 767,
+        mobile: "767px",
+        tablet: "991px",
     },
     colors: {
         alto: '#FBFBFE',

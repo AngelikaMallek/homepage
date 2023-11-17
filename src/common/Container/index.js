@@ -7,6 +7,10 @@ const Container = styled.div`
     display: flex;
     gap: 72px;
     flex-direction: column;
+
+    @media(max-width: ${({ theme }) => theme.breakpoints.mobile}) {
+        gap: 50px;
+    }
 `;
 
 export default Container;

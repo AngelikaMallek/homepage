@@ -15,6 +15,11 @@ export const WrapperImage = styled.div`
     overflow: hidden;
     background-position: center top;
     background-size: cover;
+
+    @media(max-width: ${({ theme }) => theme.breakpoints.mobile}) {
+        width: 132px;
+        height: 132px;
+    }
 `;
 
 export const WrapperDescription = styled.div`
