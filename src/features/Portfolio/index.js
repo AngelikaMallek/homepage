@@ -1,4 +1,4 @@
-import { PortfolioItemStyled } from "./PortfolioItem/styled";
+import PortfolioItem from "./PortfolioItem";
 import icon from "./icon.svg";
 import { Wrapper, Image, Title, Paragraph, PortfolioWrapper } from "./styled"
 
@@ -10,10 +10,10 @@ const Portfolio = () => (
             <Paragraph>My recent projects</Paragraph>
         </Wrapper>
         <PortfolioWrapper>
-            <PortfolioItemStyled />
-            <PortfolioItemStyled />
-            <PortfolioItemStyled />
-            <PortfolioItemStyled />
+            <PortfolioItem />
+            <PortfolioItem />
+            <PortfolioItem />
+            <PortfolioItem />
         </PortfolioWrapper>
     </>
 );
