@@ -1,12 +1,12 @@
 import { PortfolioItemStyled, Title, Description, LinkWrapper, StyledLink, Paraghaph } from "./styled";
 
-const PortfolioItem = () => (
+const PortfolioItem = ({ title, description, linkDemo, linkRepo }) => (
     <PortfolioItemStyled>
-        <Title>Movies Browser</Title>
-        <Description>Project description, e.g. website where you can search for favourite movies and people. Project description, e.g. website where you can search.</Description>
+        <Title>{ title }</Title>
+        <Description>{ description }</Description>
         <LinkWrapper>
-            <Paraghaph>Demo:</Paraghaph> <StyledLink href="https://angelikamallek.github.io/to-do-list-react/#/zadania">https://link.demo.com</StyledLink>
-            <Paraghaph>Code:</Paraghaph> <StyledLink href="https://github.com/AngelikaMallek/to-do-list-react">https://link.code.com</StyledLink>
+            <Paraghaph>Demo:</Paraghaph> <StyledLink href={ linkDemo }>https://link.demo.com</StyledLink>
+            <Paraghaph>Code:</Paraghaph> <StyledLink href={ linkRepo }>https://link.code.com</StyledLink>
         </LinkWrapper>
     </PortfolioItemStyled>
 );
