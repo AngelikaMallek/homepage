@@ -1,15 +1,20 @@
 {
   "files": {
-    "main.css": "/personal-homepage/static/css/main.e6c13ad2.css",
-    "main.js": "/personal-homepage/static/js/main.36d3faa3.js",
+    "main.js": "/personal-homepage/static/js/main.bf5783ef.js",
     "static/js/787.162bc9a0.chunk.js": "/personal-homepage/static/js/787.162bc9a0.chunk.js",
+    "static/media/person.jpg": "/personal-homepage/static/media/person.d84549307b70d581cda2.jpg",
+    "static/media/instagram.svg": "/personal-homepage/static/media/instagram.f9ce01193b7234d4984761347006a1bf.svg",
+    "static/media/gitHub.svg": "/personal-homepage/static/media/gitHub.41f59883ca7f893a0918d741f666d040.svg",
     "index.html": "/personal-homepage/index.html",
-    "main.e6c13ad2.css.map": "/personal-homepage/static/css/main.e6c13ad2.css.map",
-    "main.36d3faa3.js.map": "/personal-homepage/static/js/main.36d3faa3.js.map",
+    "static/media/icon.svg": "/personal-homepage/static/media/icon.0703f942faf7cecea1761d736da00476.svg",
+    "static/media/linkedin.svg": "/personal-homepage/static/media/linkedin.df6eee1e6a5276766ea817faf55af886.svg",
+    "static/media/envelope.svg": "/personal-homepage/static/media/envelope.bac5bf8471b29eaa9902ee0d791611c7.svg",
+    "static/media/facebook.svg": "/personal-homepage/static/media/facebook.989e7d18a4f3a50658e3a091f1e369a1.svg",
+    "static/media/Ellipse.svg": "/personal-homepage/static/media/Ellipse.68407598b5fb839af5aec77b06100eb5.svg",
+    "main.bf5783ef.js.map": "/personal-homepage/static/js/main.bf5783ef.js.map",
     "787.162bc9a0.chunk.js.map": "/personal-homepage/static/js/787.162bc9a0.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.e6c13ad2.css",
-    "static/js/main.36d3faa3.js"
+    "static/js/main.bf5783ef.js"
   ]
 }
