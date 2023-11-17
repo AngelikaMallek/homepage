@@ -3,6 +3,7 @@ import Container from "./common/Container";
 import Header from "./common/Header";
 import Section from "./common/Section";
 import Portfolio from "./features/Portfolio";
+import Footer from "./common/Footer";
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
         body={skillsToLearn}
       />
       <Portfolio />
+      <Footer />
     </Container>
   );
 }
