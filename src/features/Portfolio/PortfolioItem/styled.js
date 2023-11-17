@@ -2,12 +2,15 @@ import styled from "styled-components";
 
 export const PortfolioItemStyled = styled.div`
     max-width: 592px;
-    height: 322px;
     border-radius: 4px;
     border: 6px solid var(--diff-bg-neutral, rgba(209, 213, 218, 0.30));
     box-shadow: 0px 16px 58px 0px rgba(9, 10, 51, 0.03), 0px -2px 50px 0px rgba(9, 10, 51, 0.02);
     background-color: ${({ theme }) => theme.colors.white};
     padding: 56px;
+
+    @media(max-width: ${({ theme }) => theme.breakpoints.mobile}) {
+        padding: 24px;
+    }
 `;
 
 export const Title = styled.h3`
@@ -17,6 +20,11 @@ export const Title = styled.h3`
     letter-spacing: 1.2px;
     padding: 0;
     margin: 0;
+
+    @media(max-width: ${({ theme }) => theme.breakpoints.mobile}) {
+        font-size: 16px;
+        letter-spacing: 0.8px;
+    }
 `;
 
 export const Description= styled.p`
@@ -26,6 +34,12 @@ export const Description= styled.p`
     letter-spacing: 0.9px;
     padding: 0;
     margin: 24px 0;
+
+    @media(max-width: ${({ theme }) => theme.breakpoints.mobile}) {
+        margin: 16px 0;
+        font-size: 14px;
+        letter-spacing: 0.7px;
+    }
 `;
 
 export const LinkWrapper = styled.div`
@@ -40,6 +54,11 @@ export const StyledLink = styled.a`
     font-size: 18px;
     line-height: 140%;
     letter-spacing: 0.9px;
+
+    @media(max-width: ${({ theme }) => theme.breakpoints.mobile}) {
+        font-size: 14px;
+        letter-spacing: 0.7px;
+    }
 `;
 
 export const Paraghaph = styled.p`
@@ -49,4 +68,9 @@ export const Paraghaph = styled.p`
     letter-spacing: 0.9px;
     margin: 0;
     padding: 0;
+
+    @media(max-width: ${({ theme }) => theme.breakpoints.mobile}) {  
+        font-size: 14px;
+        letter-spacing: 0.7px;
+    }
 `;
