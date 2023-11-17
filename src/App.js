@@ -2,6 +2,7 @@ import { skills, skillsToLearn } from "./skilset";
 import Container from "./common/Container";
 import Header from "./common/Header";
 import Section from "./common/Section";
+import Portfolio from "./features/Portfolio";
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
         title="What I want to learn next 🚀"
         body={skillsToLearn}
       />
+      <Portfolio />
     </Container>
   );
 }
