@@ -6,6 +6,10 @@ export const Wrapper = styled.div`
     align-items: center;
     flex-direction: column;
     gap: 16px;
+
+    @media(max-width: ${({ theme }) => theme.breakpoints.mobile}) {
+        gap: 8px
+    }
 `;
 
 export const Image = styled.img`
@@ -17,6 +21,7 @@ export const Paragraph = styled.h3`
     font-size: 24px;
     font-weight: 700;
     letter-spacing: 1.2px;
+    text-align: center;
 `;
 
 export const Description = styled.p`
@@ -24,6 +29,10 @@ export const Description = styled.p`
     line-height: 140%;
     letter-spacing: 1px;
     text-align: center;
+
+    @media(max-width: ${({ theme }) => theme.breakpoints.mobile}) {
+        font-size: 15px;
+    }
 `;
 
 export const Button = styled.div`
