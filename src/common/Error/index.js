@@ -6,7 +6,7 @@ const Error = () => (
         <Image src={icon} alt="Icon"></Image>
         <Paragraph>Ooops! Something went wrong... </Paragraph>
         <Description>Sorry, failed to load Github projects. <br /> You can check them directly on Github.</Description>
-        <Button>Go to Github</Button>
+        <a href="https://github.com/AngelikaMallek"><Button>Go to Github</Button></a>
     </Wrapper>
 )
 
