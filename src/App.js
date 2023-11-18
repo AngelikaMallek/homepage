@@ -4,6 +4,7 @@ import Header from "./common/Header";
 import Section from "./common/Section";
 import Portfolio from "./features/Portfolio";
 import Footer from "./common/Footer";
+import HeaderPortfolio from "./features/Portfolio/HeaderPortfolio";
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
         title="What I want to learn next 🚀"
         body={skillsToLearn}
       />
+      <HeaderPortfolio />
       <Portfolio />
       <Footer />
     </Container>

@@ -1,24 +1,26 @@
 import PortfolioItem from "./PortfolioItem";
-import icon from "./icon.svg";
-import { Wrapper, Image, Title, Paragraph, PortfolioWrapper } from "./styled"
+import { PortfolioWrapper } from "./styled"
 import { useRepositories } from "./useRepositories";
 import Loading from "./Loading";
+import Error from "./Error";
 
 const Portfolio = () => {
 
     const {repositories, loading, error} = useRepositories();
 
-    return (
-        <>
-            <Wrapper>
-                <Image src={icon} alt="Icon"></Image>
-                <Title>Portfolio</Title>
-                <Paragraph>My recent projects</Paragraph>
-            </Wrapper>
+    if(loading) {
+        return <Loading />
+    }
+
+    if(error) { 
+        return <Error />
+    }
+
+    try {
+        return (
+            <>
             <PortfolioWrapper>
-                {loading ?
-                    <Loading />
-                : repositories ? repositories.map((repository) => (
+                {repositories ? repositories.map((repository) => (
                     <PortfolioItem 
                         key={repository.id}
                         title={repository.name}
@@ -27,9 +29,13 @@ const Portfolio = () => {
                         linkRepo={repository.html_url}
                     />
                 )) : ""}
-            </PortfolioWrapper>
-        </>
-    );
+                </PortfolioWrapper>
+            </>
+        );
+    } catch {
+        return "";
+    }
+
 }
 
 export default Portfolio;

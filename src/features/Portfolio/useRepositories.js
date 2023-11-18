@@ -20,7 +20,7 @@ export const useRepositories = () => {
             }
         }
 
-        setTimeout(fetchRepositories, 5000);
+        setTimeout(fetchRepositories, 2000);
     },[]);
 
     return {repositories, loading, error};
