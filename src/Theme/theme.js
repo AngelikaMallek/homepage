@@ -11,5 +11,6 @@ export const theme = {
         scienceBlue: '#0366D6',
         black: '#000000',
         slateGray: '#6E7E91',
+        iron: '#D1D5DA',
     }
 }
