@@ -2,10 +2,11 @@ import PortfolioItem from "./PortfolioItem";
 import icon from "./icon.svg";
 import { Wrapper, Image, Title, Paragraph, PortfolioWrapper } from "./styled"
 import { useRepositories } from "./useRepositories";
+import Loading from "./Loading";
 
 const Portfolio = () => {
 
-    const repositories = useRepositories();
+    const {repositories, loading, error} = useRepositories();
 
     return (
         <>
@@ -15,7 +16,9 @@ const Portfolio = () => {
                 <Paragraph>My recent projects</Paragraph>
             </Wrapper>
             <PortfolioWrapper>
-                {repositories ? repositories.map((repository) => (
+                {loading ?
+                    <Loading />
+                : repositories ? repositories.map((repository) => (
                     <PortfolioItem 
                         key={repository.id}
                         title={repository.name}
@@ -24,7 +27,6 @@ const Portfolio = () => {
                         linkRepo={repository.html_url}
                     />
                 )) : ""}
-
             </PortfolioWrapper>
         </>
     );
