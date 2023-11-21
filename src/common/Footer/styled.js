@@ -1,4 +1,8 @@
 import styled from "styled-components";
+import { ReactComponent as GithubIcon } from './gitHub.svg';
+import { ReactComponent as FbIcon } from './facebook.svg';
+import { ReactComponent as LinkedinIcon } from './linkedin.svg';
+import { ReactComponent as InstaIcon } from './instagram.svg';
 
 export const StyledFooter = styled.header`
     display: flex;
@@ -66,11 +70,30 @@ export const Icons = styled.div`
     }
 `;
 
-export const Image = styled.img`
+export const Github = styled(GithubIcon)`
     @media(max-width: ${({ theme }) => theme.breakpoints.mobile}) { 
         width: 32px;
         height: 32px;
     }
-`;
+`
+
+export const Instagram = styled(InstaIcon)`
+    @media(max-width: ${({ theme }) => theme.breakpoints.mobile}) { 
+        width: 32px;
+        height: 32px;
+    }
+`
+export const Facebook = styled(FbIcon)`
+    @media(max-width: ${({ theme }) => theme.breakpoints.mobile}) { 
+        width: 32px;
+        height: 32px;
+    }
+`
+export const Linkedin = styled(LinkedinIcon)`
+    @media(max-width: ${({ theme }) => theme.breakpoints.mobile}) { 
+        width: 32px;
+        height: 32px;
+    }
+`
 
 

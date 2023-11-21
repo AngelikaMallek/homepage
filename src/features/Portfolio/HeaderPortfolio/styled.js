@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { ReactComponent as PortfolioIcon } from "./icon.svg";
 
 export const Wrapper = styled.div`
     display: flex;
@@ -8,7 +9,7 @@ export const Wrapper = styled.div`
     gap: 8px;
 `;
 
-export const Image = styled.img`
+export const Icon = styled(PortfolioIcon)`
     width: 40px;
     height: 40px;
     margin: 0;

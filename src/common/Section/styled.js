@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { ReactComponent as Ellipse } from "./Ellipse.svg";
 
 export const StyledSection = styled.div`
     max-width: 1216px;
@@ -76,7 +77,7 @@ export const Span = styled.span`
     }
 `;
 
-export const Image = styled.img`
+export const Image = styled(Ellipse)`
     @media(max-width: ${({ theme }) => theme.breakpoints.mobile}) {
         width: 6px;
         height: 6px;

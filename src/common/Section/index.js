@@ -1,5 +1,4 @@
 import { StyledSection, Heading, Body, StyledList, ListItem, Span, Image } from "./styled";
-import ellipse from "./Ellipse.svg"
 
 const Section = ({ title, body }) => (
     <StyledSection>
@@ -10,7 +9,7 @@ const Section = ({ title, body }) => (
             <StyledList>
                 {body ? body.map((skill) => (
                     <ListItem key={skill}>
-                        <Image src={ellipse} alt="ellipse"></Image>
+                        <Image />
                         <Span>{skill}</Span>
                     </ListItem>
                 )) : ""}

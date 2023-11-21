@@ -1,9 +1,8 @@
-import { Wrapper, Image, Title, Paragraph } from "./styled";
-import icon from "./icon.svg";
+import { Wrapper, Icon, Title, Paragraph } from "./styled";
 
 const HeaderPortfolio = () => (
     <Wrapper>
-        <Image src={icon} alt="Icon"></Image>
+        <Icon />
         <Title>Portfolio</Title>
         <Paragraph>My recent projects</Paragraph>
     </Wrapper>
