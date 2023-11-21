@@ -21,7 +21,7 @@ export const Image = styled.img`
 `;
 
 export const Title = styled.h2`
-    color: ${({theme}) => theme.colors.mineShaft};
+    color: ${({theme}) => theme.sectionHeading};
     text-align: center;
     font-size: 30px;
     font-weight: 900;
@@ -36,7 +36,7 @@ export const Title = styled.h2`
 `;
 
 export const Paragraph = styled.p`
-    color: ${({theme}) => theme.colors.mineShaft};
+    color: ${({theme}) => theme.sectionHeading};
     font-size: 20px;
     line-height: 140%;
     letter-spacing: 1px;

@@ -12,7 +12,7 @@ export const GlobalStyle = createGlobalStyle`
     }
 
     .body {
-        background-color: ${({theme}) => theme.colors.alto};
+        background-color: ${({theme}) => theme.background};
         font-family: "Inter", sans-serif;
     }
 `;

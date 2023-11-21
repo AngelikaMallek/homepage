@@ -5,7 +5,7 @@ export const PortfolioItemStyled = styled.div`
     border-radius: 4px;
     border: 6px solid var(--diff-bg-neutral, rgba(209, 213, 218, 0.30));
     box-shadow: 0px 16px 58px 0px rgba(9, 10, 51, 0.03), 0px -2px 50px 0px rgba(9, 10, 51, 0.02);
-    background-color: ${({ theme }) => theme.colors.white};
+    background-color: ${({ theme }) => theme.backgroundItem};
     padding: 56px;
 
     @media(max-width: ${({ theme }) => theme.breakpoints.mobile}) {
@@ -14,7 +14,7 @@ export const PortfolioItemStyled = styled.div`
 `;
 
 export const Title = styled.h3`
-    color: ${({theme}) => theme.colors.scienceBlue};
+    color: ${({theme}) => theme.portfolioHeading};
     font-size: 24px;
     font-weight: 700;
     letter-spacing: 1.2px;
@@ -28,7 +28,7 @@ export const Title = styled.h3`
 `;
 
 export const Description= styled.p`
-    color: ${({theme}) => theme.colors.slateGray};
+    color: ${({ theme }) => theme.paragraph};
     font-size: 18px;
     line-height: 140%;
     letter-spacing: 0.9px;
@@ -62,7 +62,7 @@ export const StyledLink = styled.a`
 `;
 
 export const Paraghaph = styled.p`
-    color: ${({theme}) => theme.colors.slateGray};
+    color: ${({ theme }) => theme.paragraph};
     font-size: 18px;
     line-height: 140%;
     letter-spacing: 0.9px;

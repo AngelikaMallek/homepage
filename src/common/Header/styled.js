@@ -43,14 +43,14 @@ export const WrapperDescription = styled.div`
     }
 `;
 export const Paragraph = styled.p`
-    color: ${({ theme }) => theme.colors.slateGray};
+    color: ${({ theme }) => theme.paragraph};
     font-size: 12px;
     font-weight: 700;
     line-height: 130%;
     text-transform: uppercase;
 `;
 export const Name = styled.h1`
-    color: ${({ theme }) => theme.colors.mineShaft};
+    color: ${({ theme }) => theme.sectionHeading};
     font-size: 38px;
     font-weight: 900;
     letter-spacing: 1.9px;
@@ -61,7 +61,7 @@ export const Name = styled.h1`
     }
 `;
 export const Description = styled.p`
-    color: ${({ theme }) => theme.colors.mineShaft};
+    color: ${({ theme }) => theme.paragraph};
     font-size: 20px;
     line-height: 140%;
     letter-spacing: 1px;
