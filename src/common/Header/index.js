@@ -1,9 +1,11 @@
 import { WrapperImage, StyledHeader, WrapperDescription, Paragraph, Name, Description, Button } from "./styled";
 import { ReactComponent as Envelope } from "./envelope.svg";
+import ModeButton from "./ModeButton";
 
 const Header = () => {
     return(
         <StyledHeader>
+            <ModeButton />
             <WrapperImage />
             <WrapperDescription>
                 <Paragraph>THIS IS</Paragraph>

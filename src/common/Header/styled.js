@@ -5,6 +5,7 @@ export const StyledHeader = styled.header`
     margin-top: 115px;
     display: flex;
     gap: 66px;
+    position: relative;
 
     @media(max-width: ${({ theme }) => theme.breakpoints.tablet}) {
         flex-direction: column;
@@ -48,6 +49,7 @@ export const Paragraph = styled.p`
     font-weight: 700;
     line-height: 130%;
     text-transform: uppercase;
+    display: flex;
 `;
 export const Name = styled.h1`
     color: ${({ theme }) => theme.sectionHeading};

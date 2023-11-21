@@ -17,6 +17,7 @@ const colors = {
         slateGray: '#6E7E91',
         iron: '#D1D5DA',
         semiDark: 'rgba(54, 54, 54, 0.72)',
+        mercury: '#E5E5E5',
     }
 }
 
