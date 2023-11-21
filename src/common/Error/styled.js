@@ -6,6 +6,7 @@ export const Wrapper = styled.div`
     align-items: center;
     flex-direction: column;
     gap: 16px;
+    color: ${({ theme }) => theme.paragraph};
 
     @media(max-width: ${({ theme }) => theme.breakpoints.mobile}) {
         gap: 8px
@@ -22,6 +23,7 @@ export const Paragraph = styled.h3`
     font-weight: 700;
     letter-spacing: 1.2px;
     text-align: center;
+    color: ${({ theme }) => theme.paragraph};
 `;
 
 export const Description = styled.p`
@@ -29,6 +31,7 @@ export const Description = styled.p`
     line-height: 140%;
     letter-spacing: 1px;
     text-align: center;
+    color: ${({ theme }) => theme.paragraph};
 
     @media(max-width: ${({ theme }) => theme.breakpoints.mobile}) {
         font-size: 15px;
@@ -44,5 +47,5 @@ export const Button = styled.div`
     border-radius: 4px;
     border: 1px solid var(--semi-grey, rgba(209, 213, 218, 0.10));
     background: ${({ theme }) => theme.colors.scienceBlue};
-    color: ${({ theme }) => theme.colors.white};;
+    color: ${({ theme }) => theme.colors.white};
 `;

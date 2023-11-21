@@ -20,8 +20,6 @@ const colors = {
     }
 }
 
-
-
 export const themeLight = {
     ...common,
     ...colors,
@@ -30,6 +28,8 @@ export const themeLight = {
     backgroundItem: colors.colors.white,
     sectionHeading: colors.colors.mineShaft,
     portfolioHeading: colors.colors.scienceBlue,
+    icon: colors.colors.black,
+    loader: colors.colors.iron,
 }
 
 export const themeDark = {
@@ -40,4 +40,6 @@ export const themeDark = {
     backgroundItem: colors.colors.semiDark,
     sectionHeading: colors.colors.white,
     portfolioHeading: colors.colors.white,
+    icon: colors.colors.white,
+    loader: colors.colors.littleGrey,
 }

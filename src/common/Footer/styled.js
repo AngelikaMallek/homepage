@@ -58,6 +58,7 @@ export const Icons = styled.div`
     display: flex;
     gap: 24px;
     margin-top: 56px;
+    color: ${({ theme }) => theme.icon};
 
     @media(max-width: ${({ theme }) => theme.breakpoints.mobile}) { 
         gap: 16px;

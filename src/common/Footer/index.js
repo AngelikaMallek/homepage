@@ -1,8 +1,8 @@
-import { StyledFooter, WrapperDescription, Paragraph, Name, Description, Icons, Image } from "./styled";
-import github from "./gitHub.svg";
-import facebook from "./facebook.svg";
-import linkedin from "./linkedin.svg";
-import instagram from "./instagram.svg";
+import { StyledFooter, WrapperDescription, Paragraph, Name, Description, Icons } from "./styled";
+import { ReactComponent as GithubIcon } from './gitHub.svg';
+import { ReactComponent as FbIcon } from './facebook.svg';
+import { ReactComponent as LinkedinIcon } from './linkedin.svg';
+import { ReactComponent as InstaIcon } from './instagram.svg';
 
 const Footer = () => {
     return(
@@ -12,10 +12,10 @@ const Footer = () => {
                 <Name>angelika.mallek03@gmail.com</Name>
                 <Description>I’m always open to new projects whenever I have the time. If you have a website, dashboard or mobile app in mind and need some help to make your ideas come to life, feel free to conatct me</Description>
                 <Icons>
-                    <Image src={github} alt="Social Media Icon"></Image>
-                    <Image src={facebook} alt="Social Media Icon"></Image>
-                    <Image src={linkedin} alt="Social Media Icon"></Image>
-                    <Image src={instagram} alt="Social Media Icon"></Image>
+                    <GithubIcon />
+                    <FbIcon />
+                    <LinkedinIcon />
+                    <InstaIcon />
                 </Icons>
             </WrapperDescription>
         </StyledFooter>
