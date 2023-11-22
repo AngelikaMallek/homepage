@@ -32,12 +32,14 @@ export const Paragraph = styled.p`
     line-height: 130%;
     text-transform: uppercase;
 `;
-export const Name = styled.h1`
+export const Name = styled.a`
     color: ${({ theme }) => theme.sectionHeading};
     transition: color 0.3s;
     font-size: 32px;
     font-weight: 900;
     letter-spacing: 1.6px;
+    cursor: pointer;
+    text-decoration: none;
 
     @media(max-width: ${({ theme }) => theme.breakpoints.mobile}) {
         font-size: 18px;

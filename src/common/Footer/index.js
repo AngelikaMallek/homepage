@@ -1,16 +1,17 @@
 import { StyledFooter, WrapperDescription, Paragraph, Name, Description, Icons, Link } from "./styled";
 import { socials } from "./socialIcons";
+import { aboutMe } from "../aboutMe";
 
 const Footer = () => {
     return(
         <StyledFooter>
             <WrapperDescription>
                 <Paragraph>Let’s talk!</Paragraph>
-                <Name>angelika.mallek03@gmail.com</Name>
-                <Description>I’m always open to new projects whenever I have the time. If you have a website, dashboard or mobile app in mind and need some help to make your ideas come to life, feel free to conatct me</Description>
+                <Name href={aboutMe.url}>{aboutMe.mail}</Name>
+                <Description>{aboutMe.footerDescription}</Description>
                 <Icons>
                     {socials.map(({name, url, Icon}) => (
-                        <Link href={url} title={name}>
+                        <Link href={url} title={name} target="_blank" key={name}>
                             <Icon />
                         </Link>
                     ))} 

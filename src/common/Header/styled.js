@@ -76,8 +76,9 @@ export const Description = styled.p`
         letter-spacing: 0.85px;
     }
 `;
-export const Button = styled.button`
+export const Button = styled.a`
     color: ${({ theme }) => theme.colors.white};
+    max-width: 154px;
     display: flex;
     padding: 12px 16px;
     justify-content: center;
@@ -86,6 +87,7 @@ export const Button = styled.button`
     border-radius: 4px;
     border: 1px solid var(--diff-bg-neutral, rgba(209, 213, 218, 0.30));
     background-color: ${({ theme }) => theme.colors.scienceBlue};
+    text-decoration: none;
 
     @media(max-width: ${({ theme }) => theme.breakpoints.mobile}) {
         gap: 12px;

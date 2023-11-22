@@ -28,6 +28,7 @@ export const Paragraph = styled.p`
 `;
 
 export const Button = styled.button`
+    cursor: pointer;
     width: 48px;
     height: 26px;
     border-radius: 30px;
