@@ -1,27 +1,19 @@
-import { skills, skillsToLearn } from "./skilset";
-import Container from "./common/Container";
-import Header from "./common/Header";
-import Section from "./common/Section";
-import Portfolio from "./features/Portfolio";
-import Footer from "./common/Footer";
-import HeaderPortfolio from "./features/Portfolio/HeaderPortfolio";
+import PersonalHomepage from "./features/PersonalHomepage";
+import { ThemeProvider } from 'styled-components';
+import { themeDark, themeLight } from './Theme/theme';
+import { GlobalStyle } from './styled';
+import { useSelector } from "react-redux";
+import { selectIsDarkTheme } from "./common/Header/ModeButton/themeSlice";
 
 function App() {
+
+  const isDarkMode = useSelector(selectIsDarkTheme)
+
   return (
-    <Container>
-      <Header />
-      <Section 
-        title="My skillset includes 🛠️" 
-        body={skills} 
-      />
-      <Section
-        title="What I want to learn next 🚀"
-        body={skillsToLearn}
-      />
-      <HeaderPortfolio />
-      <Portfolio />
-      <Footer />
-    </Container>
+    <ThemeProvider theme={isDarkMode ? themeDark : themeLight}>
+      <GlobalStyle />
+      <PersonalHomepage />
+    </ThemeProvider>
   );
 }
 
