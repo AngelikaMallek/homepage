@@ -4,13 +4,13 @@ import { toggleTheme, selectIsDarkTheme } from "./themeSlice";
 
 const ModeButton = () => {
 
-    const theme = useSelector(selectIsDarkTheme);
+    const isDarkMode = useSelector(selectIsDarkTheme);
 
     const dispatch = useDispatch()
 
     return (
         <Wrapper>
-            <Paragraph>Dark mode off</Paragraph>
+            <Paragraph>Dark mode {isDarkMode ? "on" : "off"}</Paragraph>
             <Button onClick={() => dispatch(toggleTheme())}></Button>
         </Wrapper>
     )

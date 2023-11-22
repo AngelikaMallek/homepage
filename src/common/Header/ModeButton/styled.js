@@ -19,6 +19,10 @@ export const Paragraph = styled.p`
     font-weight: 700;
     line-height: 130%;
     text-transform: uppercase;
+
+    @media (max-width: ${({theme}) => theme.breakpoints.mobile}) {
+        display: none;
+    }
 `;
 
 export const Button = styled.button`
