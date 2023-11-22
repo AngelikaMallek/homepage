@@ -31,6 +31,11 @@ export const themeLight = {
     portfolioHeading: colors.colors.scienceBlue,
     icon: colors.colors.black,
     loader: colors.colors.iron,
+    mode: {
+        color: colors.colors.white,
+        background: colors.colors.slateGray,
+        button: colors.colors.mercury,
+    }
 }
 
 export const themeDark = {
@@ -43,4 +48,9 @@ export const themeDark = {
     portfolioHeading: colors.colors.white,
     icon: colors.colors.white,
     loader: colors.colors.littleGrey,
+    mode: {
+        color: colors.colors.black,
+        background: colors.colors.white,
+        button: colors.colors.semiDark,
+    }
 }

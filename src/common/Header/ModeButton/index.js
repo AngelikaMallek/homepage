@@ -1,4 +1,4 @@
-import { Wrapper, Paragraph, Button, SunLight, SunDark } from "./styled";
+import { Wrapper, Paragraph, Button, IconWrapper, Icon } from "./styled";
 import { useSelector, useDispatch } from "react-redux";
 import { toggleTheme, selectIsDarkTheme } from "./themeSlice";
 
@@ -12,7 +12,9 @@ const ModeButton = () => {
         <Wrapper>
             <Paragraph>Dark mode {isDarkMode ? "on" : "off"}</Paragraph>
             <Button onClick={() => dispatch(toggleTheme())}>
-                {isDarkMode ? <SunDark /> : <SunLight />}
+            <IconWrapper moveToRight={isDarkMode}>
+                <Icon />
+            </IconWrapper>
             </Button>
         </Wrapper>
     )

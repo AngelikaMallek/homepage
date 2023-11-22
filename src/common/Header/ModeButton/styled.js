@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled, { css } from "styled-components";
 import { ReactComponent as SunIcon } from "./sun.svg";
 
 export const Wrapper = styled.div`
@@ -32,25 +32,27 @@ export const Button = styled.button`
     height: 26px;
     border-radius: 30px;
     border: 1px solid ${({ theme }) => theme.colors.slateGray};
-    background-color: ${({ theme }) => theme.colors.mercury};
+    background-color: ${({ theme }) => theme.mode.button};
     display: flex;
     align-items: center;
-    padding: 0;
+    padding: 3px;
 `;
 
-export const SunLight = styled(SunIcon)`
-    background-color: ${({ theme }) => theme.colors.slateGray};
-    padding: 3px;
-    margin: 3px;
-    border-radius: 50%;
-    color: white;
+export const IconWrapper = styled.span`
+  background: ${({ theme }) => theme.mode.background};
+  padding: 3px;
+  border-radius: 50%;
+  display: flex;
+  transition: transform 0.3s;
+
+  ${({ moveToRight }) =>
+    moveToRight &&
+    css`
+      transform: translateX(20px);
+    `}
 `;
 
-export const SunDark = styled(SunIcon)`
-    background-color: ${({ theme }) => theme.colors.white};
-    padding: 3px;
-    margin: 3px;
-    margin-left: 22px;
-    border-radius: 50%;
-    color: black;
+export const Icon = styled(SunIcon)`
+    color: ${({ theme }) => theme.mode.color};
 `;
+
