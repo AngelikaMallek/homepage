@@ -19,6 +19,7 @@ export const StyledLoading = styled.div`
     height: 160px;
     border-radius: 50%;
     border: 12px solid ${({ theme }) => theme.loader};
+    transition: color 0.3s;
     border-right: 12px solid ${({ theme }) => theme.colors.scienceBlue};
     animation: ${rotation} 3s linear infinite;
 
@@ -35,6 +36,7 @@ export const Paraghaph = styled.p`
     line-height: 140%;
     letter-spacing: 1px;
     color: ${({ theme }) => theme.paragraph};
+    transition: color 0.3s;
 
     @media(max-width: ${({ theme }) => theme.breakpoints.mobile}) {
         font-size: 15px;

@@ -7,6 +7,7 @@ export const Wrapper = styled.div`
     flex-direction: column;
     gap: 16px;
     color: ${({ theme }) => theme.paragraph};
+    transition: color 0.3s;
 
     @media(max-width: ${({ theme }) => theme.breakpoints.mobile}) {
         gap: 8px
@@ -24,6 +25,7 @@ export const Paragraph = styled.h3`
     letter-spacing: 1.2px;
     text-align: center;
     color: ${({ theme }) => theme.paragraph};
+    transition: color 0.3s;
 `;
 
 export const Description = styled.p`
@@ -32,6 +34,7 @@ export const Description = styled.p`
     letter-spacing: 1px;
     text-align: center;
     color: ${({ theme }) => theme.paragraph};
+    transition: color 0.3s;
 
     @media(max-width: ${({ theme }) => theme.breakpoints.mobile}) {
         font-size: 15px;

@@ -6,6 +6,7 @@ export const PortfolioItemStyled = styled.div`
     border: 6px solid var(--diff-bg-neutral, rgba(209, 213, 218, 0.30));
     box-shadow: 0px 16px 58px 0px rgba(9, 10, 51, 0.03), 0px -2px 50px 0px rgba(9, 10, 51, 0.02);
     background-color: ${({ theme }) => theme.backgroundItem};
+    transition: background 0.3s;
     padding: 56px;
 
     @media(max-width: ${({ theme }) => theme.breakpoints.mobile}) {
@@ -15,6 +16,7 @@ export const PortfolioItemStyled = styled.div`
 
 export const Title = styled.h3`
     color: ${({theme}) => theme.portfolioHeading};
+    transition: color 0.3s;
     font-size: 24px;
     font-weight: 700;
     letter-spacing: 1.2px;
@@ -29,6 +31,7 @@ export const Title = styled.h3`
 
 export const Description= styled.p`
     color: ${({ theme }) => theme.paragraph};
+    transition: color 0.3s;
     font-size: 18px;
     line-height: 140%;
     letter-spacing: 0.9px;
@@ -63,6 +66,7 @@ export const StyledLink = styled.a`
 
 export const Paraghaph = styled.p`
     color: ${({ theme }) => theme.paragraph};
+    transition: color 0.3s;
     font-size: 18px;
     line-height: 140%;
     letter-spacing: 0.9px;

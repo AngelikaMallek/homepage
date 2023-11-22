@@ -70,6 +70,7 @@ export const ListItem = styled.li`
 
 export const Span = styled.span`
     color: ${({ theme }) => theme.paragraph};
+    transition: color 0.3s;
     padding: 0 16px;
 
     @media(max-width: ${({ theme }) => theme.breakpoints.mobile}) {

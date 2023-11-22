@@ -30,6 +30,7 @@ export const WrapperDescription = styled.div`
 `;
 export const Paragraph = styled.p`
     color: ${({ theme }) => theme.paragraph};
+    transition: color 0.3s;
     font-size: 12px;
     font-weight: 700;
     line-height: 130%;
@@ -37,6 +38,7 @@ export const Paragraph = styled.p`
 `;
 export const Name = styled.h1`
     color: ${({ theme }) => theme.sectionHeading};
+    transition: color 0.3s;
     font-size: 32px;
     font-weight: 900;
     letter-spacing: 1.6px;
@@ -48,6 +50,7 @@ export const Name = styled.h1`
 `;
 export const Description = styled.p`
     color: ${({ theme }) => theme.paragraph};
+    transition: color 0.3s;
     font-size: 18px;
     line-height: 140%;
     letter-spacing: 0.9px;
@@ -63,6 +66,7 @@ export const Icons = styled.div`
     gap: 24px;
     margin-top: 56px;
     color: ${({ theme }) => theme.icon};
+    transition: color 0.3s;
 
     @media(max-width: ${({ theme }) => theme.breakpoints.mobile}) { 
         gap: 16px;

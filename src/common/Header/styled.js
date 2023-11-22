@@ -45,6 +45,7 @@ export const WrapperDescription = styled.div`
 `;
 export const Paragraph = styled.p`
     color: ${({ theme }) => theme.paragraph};
+    transition: color 0.3s;
     font-size: 12px;
     font-weight: 700;
     line-height: 130%;
@@ -53,6 +54,7 @@ export const Paragraph = styled.p`
 `;
 export const Name = styled.h1`
     color: ${({ theme }) => theme.sectionHeading};
+    transition: color 0.3s;
     font-size: 38px;
     font-weight: 900;
     letter-spacing: 1.9px;
@@ -64,6 +66,7 @@ export const Name = styled.h1`
 `;
 export const Description = styled.p`
     color: ${({ theme }) => theme.paragraph};
+    transition: color 0.3s;
     font-size: 20px;
     line-height: 140%;
     letter-spacing: 1px;

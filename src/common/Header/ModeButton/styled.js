@@ -16,6 +16,7 @@ export const Wrapper = styled.div`
 
 export const Paragraph = styled.p`
     color: ${({ theme }) => theme.paragraph};
+    transition: color 0.3s;
     font-size: 12px;
     font-weight: 700;
     line-height: 130%;
