@@ -17,7 +17,7 @@ export const socials = [
     },
     {
         name: 'Linkedin',
-        url: 'https://www.facebook.com/profile.php?id=100006222018791&locale=pl_PL',
+        url: 'https://www.linkedin.com/in/angelika-mallek-b10a61262/',
         Icon: IconStyle(LinkedinIcon),
     },
     {
