@@ -17,7 +17,7 @@ export const socials = [
     },
     {
         name: 'Linkedin',
-        url: 'https://www.linkedin.com/in/angelika-mallek-b10a61262/',
+        url: 'www.linkedin.com/in/angelika-mallek-b10a61262',
         Icon: IconStyle(LinkedinIcon),
     },
     {
