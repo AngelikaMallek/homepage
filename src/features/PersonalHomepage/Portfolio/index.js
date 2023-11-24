@@ -17,36 +17,34 @@ const Portfolio = () => {
         dispatch(fetchRepos());
     }, [dispatch]);
 
-    if(repositoriesStatus === "loading") {
-        return <Loading />
-    } 
-
-    if(repositoriesStatus === "error") {
-        return <Error />
+    switch(repositoriesStatus) {
+        case "loading" :
+            return <Loading />
+        case "error" :
+            return <Error />
+        case "success" : 
+            try {
+                return (
+                    <>
+                    <PortfolioWrapper>
+                        {repositories ? repositories.map((repository) => (
+                            <PortfolioItem 
+                                key={repository.id}
+                                title={repository.name}
+                                description={repository.description}
+                                linkDemo={repository.homepage}
+                                linkRepo={repository.html_url}
+                            />
+                        )) : ""}
+                        </PortfolioWrapper>
+                    </>
+                );
+            } catch {
+                return "";
+            }
+        default:
+            return null;
     }
-
-    if(repositoriesStatus === "success") {
-        try {
-            return (
-                <>
-                <PortfolioWrapper>
-                    {repositories ? repositories.map((repository) => (
-                        <PortfolioItem 
-                            key={repository.id}
-                            title={repository.name}
-                            description={repository.description}
-                            linkDemo={repository.homepage}
-                            linkRepo={repository.html_url}
-                        />
-                    )) : ""}
-                    </PortfolioWrapper>
-                </>
-            );
-        } catch {
-            return "";
-        }
-}
-
 }
 
 export default Portfolio;
