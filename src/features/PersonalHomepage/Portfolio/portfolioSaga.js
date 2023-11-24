@@ -9,7 +9,6 @@ function* fetchRepositoriesHandler() {
         yield put(setRepos(portfolio));
         yield put(setStatus("success"));
     } catch (error) {
-        yield call(alert, "theme.paragraph poszło nie tak!");
         yield put(setStatus("error"));
     }
 }

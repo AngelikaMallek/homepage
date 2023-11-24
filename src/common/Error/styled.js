@@ -6,7 +6,7 @@ export const Wrapper = styled.div`
     align-items: center;
     flex-direction: column;
     gap: 16px;
-    color: ${({ theme }) => theme.paragraph};
+    color: ${({ theme }) => theme.icon};
     transition: color 0.3s;
 
     @media(max-width: ${({ theme }) => theme.breakpoints.mobile}) {
@@ -24,7 +24,7 @@ export const Paragraph = styled.h3`
     font-weight: 700;
     letter-spacing: 1.2px;
     text-align: center;
-    color: ${({ theme }) => theme.paragraph};
+    color: ${({ theme }) => theme.icon};
     transition: color 0.3s;
 `;
 
