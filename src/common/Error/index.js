@@ -1,4 +1,4 @@
-import { Wrapper, Image, Paragraph, Description, Button } from "./styled";
+import { Wrapper, Paragraph, Description, Button } from "./styled";
 import { ReactComponent as Icon } from './icon.svg';
 
 const Error = () => (
