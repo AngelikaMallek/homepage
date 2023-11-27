@@ -13,7 +13,7 @@ const Header = () => {
                 <Paragraph>THIS IS</Paragraph>
                 <Name>{aboutMe.name}</Name>
                 <Description>{aboutMe.description}</Description>
-                <Button href={aboutMe.url}>
+                <Button href={aboutMe.url} title={aboutMe.url}>
                     <Envelope />
                     Hire Me
                 </Button>

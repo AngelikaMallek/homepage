@@ -41,6 +41,10 @@ export const Name = styled.a`
     cursor: pointer;
     text-decoration: none;
 
+    &:hover {
+        color: ${({ theme }) => theme.colors.azureRadiance};
+    }
+
     @media(max-width: ${({ theme }) => theme.breakpoints.mobile}) {
         font-size: 18px;
         letter-spacing: 0.9px;

@@ -7,7 +7,7 @@ const Footer = () => {
         <StyledFooter>
             <WrapperDescription>
                 <Paragraph>Let’s talk!</Paragraph>
-                <Name href={aboutMe.url}>{aboutMe.mail}</Name>
+                <Name href={aboutMe.url} title={aboutMe.url}>{aboutMe.mail}</Name>
                 <Description>{aboutMe.footerDescription}</Description>
                 <Icons>
                     {socials.map(({name, url, Icon}) => (

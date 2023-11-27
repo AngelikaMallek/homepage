@@ -19,6 +19,7 @@ const colors = {
         iron: '#D1D5DA',
         semiDark: 'rgba(54, 54, 54, 0.72)',
         mercury: '#E5E5E5',
+        azureRadiance: '#0676F4',
     }
 }
 

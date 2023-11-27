@@ -1,5 +1,4 @@
 import styled from "styled-components";
-import person from "./person.jpg";
 
 export const StyledHeader = styled.header`
     margin-top: 115px;
@@ -91,6 +90,11 @@ export const Button = styled.a`
     border: 1px solid var(--diff-bg-neutral, rgba(209, 213, 218, 0.30));
     background-color: ${({ theme }) => theme.colors.scienceBlue};
     text-decoration: none;
+    transition: background 0.3s;
+
+    &:hover {
+        background-color: ${({ theme }) => theme.colors.azureRadiance};
+    }
 
     @media(max-width: ${({ theme }) => theme.breakpoints.tablet}) {
         gap: 12px;
