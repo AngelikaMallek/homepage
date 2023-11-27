@@ -80,8 +80,7 @@ export const Description = styled.p`
 `;
 export const Button = styled.a`
     color: ${({ theme }) => theme.colors.white};
-    max-width: 154px;
-    display: flex;
+    display: inline-flex;
     padding: 12px 16px;
     justify-content: center;
     align-items: center;

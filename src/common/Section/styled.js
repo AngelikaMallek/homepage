@@ -36,20 +36,20 @@ export const Body = styled.div`
 export const StyledList = styled.ul`
     list-style: none;
     display: grid;
-    grid-template-columns: auto auto auto;
+    grid-template-columns: 1fr 1fr 1fr;
     gap: 8px;
     padding: 30px 32px;
     padding-left: 0;
     margin: 0;
 
     @media(max-width: ${({theme}) => theme.breakpoints.tablet}){
-        grid-template-columns: auto auto;
+        grid-template-columns: 1fr;
         padding: 16px;
         padding-left: 0;
     }
 
     @media(max-width: ${({ theme }) => theme.breakpoints.mobile}) {
-        grid-template-columns: auto;
+        grid-template-columns: 1fr;
         padding: 16px;
         padding-left: 0;
     }
