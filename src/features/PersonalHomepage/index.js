@@ -9,16 +9,20 @@ import HeaderPortfolio from "./HeaderPortfolio";
 const PersonalHomepage = () => (
     <Container>
       <Header />
-      <Section 
-        title="My skillset includes 🛠️" 
-        body={skills} 
-      />
-      <Section
-        title="What I want to learn next 🚀"
-        body={skillsToLearn}
-      />
-      <HeaderPortfolio />
-      <Portfolio />
+      <main>
+        <Section 
+          title="My skillset includes 🛠️" 
+          body={skills} 
+        />
+        <Section
+          title="What I want to learn next 🚀"
+          body={skillsToLearn}
+        />
+        <section>
+          <HeaderPortfolio />
+          <Portfolio />
+        </section>
+      </main>
       <Footer />
     </Container>
 )

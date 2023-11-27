@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-export const PortfolioWrapper = styled.div`
+export const PortfolioWrapper = styled.section`
     display: grid;
     grid-template-columns: auto auto;
     grid-gap: 32px;

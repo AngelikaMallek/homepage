@@ -1,7 +1,7 @@
 import styled from "styled-components";
 import { ReactComponent as Ellipse } from "./Ellipse.svg";
 
-export const StyledSection = styled.div`
+export const StyledSection = styled.section`
     max-width: 1216px;
     background-color: ${({theme}) => theme.backgroundItem};
     padding: 32px;
