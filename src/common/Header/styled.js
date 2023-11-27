@@ -13,25 +13,28 @@ export const StyledHeader = styled.header`
         margin-top: 32px;
     }
 
-    @media(max-width: ${({ theme }) => theme.breakpoints.mobile}) {
+    @media(max-width: ${({ theme }) => theme.breakpoints.tablet}) {
         flex-direction: column;
         gap: 12px;
         margin-top: 32px;
     }
 `;
 
-export const WrapperImage = styled.div`
-    width: 398px;
-    height: 398px;
+export const WrapperImage = styled.img`
+    width: 30vw;
+    height: 30vw;
     border-radius: 50%;
-    background-image: url("${person}");
-    overflow: hidden;
-    background-position: center top;
-    background-size: cover;
+    min-width: 132px;
+    min-height: 132px;
 
-    @media(max-width: ${({ theme }) => theme.breakpoints.mobile}) {
-        width: 132px;
-        height: 132px;
+    @media(max-width: ${({ theme }) => theme.breakpoints.narrow}) {
+        width: 25vw;
+        height: 25vw;
+    }
+
+    @media(max-width: ${({ theme }) => theme.breakpoints.tablet}) {
+        width: 20vw;
+        height: 20vw;
     }
 `;
 
@@ -39,7 +42,7 @@ export const WrapperDescription = styled.div`
     padding-top: 68px;
     max-width: 624px;
 
-    @media(max-width: ${({ theme }) => theme.breakpoints.mobile}) {
+    @media(max-width: ${({ theme }) => theme.breakpoints.tablet}) {
         padding-top: 0;
     }
 `;
@@ -59,7 +62,7 @@ export const Name = styled.h1`
     font-weight: 900;
     letter-spacing: 1.9px;
 
-    @media(max-width: ${({ theme }) => theme.breakpoints.mobile}) {
+    @media(max-width: ${({ theme }) => theme.breakpoints.narrow}) {
         font-size: 22px;
         letter-spacing: 1.1px;
     }
@@ -71,7 +74,7 @@ export const Description = styled.p`
     line-height: 140%;
     letter-spacing: 1px;
 
-    @media(max-width: ${({ theme }) => theme.breakpoints.mobile}) { 
+    @media(max-width: ${({ theme }) => theme.breakpoints.narrow}) { 
         font-size: 17px;
         letter-spacing: 0.85px;
     }
@@ -89,7 +92,7 @@ export const Button = styled.a`
     background-color: ${({ theme }) => theme.colors.scienceBlue};
     text-decoration: none;
 
-    @media(max-width: ${({ theme }) => theme.breakpoints.mobile}) {
+    @media(max-width: ${({ theme }) => theme.breakpoints.tablet}) {
         gap: 12px;
     }
 `;
