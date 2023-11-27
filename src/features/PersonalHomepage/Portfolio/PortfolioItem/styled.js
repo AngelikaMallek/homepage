@@ -69,6 +69,11 @@ export const StyledLink = styled.a`
     line-height: 140%;
     letter-spacing: 0.9px;
     word-break: break-all;
+    transition: color 0.3s;
+
+    &:hover {
+        color: ${({ theme }) => theme.colors.azureRadiance};
+    }
 
     @media(max-width: ${({ theme }) => theme.breakpoints.mobile}) {
         font-size: 14px;
