@@ -15,8 +15,13 @@ export const PortfolioItemStyled = styled.li`
         border: 6px solid var(--diff-bg-neutral, ${({ theme }) => theme.colors.anakiwa});
     }
 
+    @media(max-width: ${({ theme }) => theme.breakpoints.tablet}) {
+        max-width: 100%;
+    }
+
     @media(max-width: ${({ theme }) => theme.breakpoints.mobile}) {
         padding: 24px;
+        max-width: 100%;
     }
 `;
 
