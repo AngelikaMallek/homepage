@@ -5,8 +5,12 @@ const PortfolioItem = ({ title, description, linkDemo, linkRepo }) => (
         <Title>{ title }</Title>
         <Description>{ description }</Description>
         <LinkWrapper>
-            <Paraghaph>Demo:</Paraghaph> <StyledLink href={ linkDemo } target="_blank">https://link.demo.com</StyledLink>
-            <Paraghaph>Code:</Paraghaph> <StyledLink href={ linkRepo } target="_blank">https://link.code.com</StyledLink>
+            {linkDemo ? 
+                <><Paraghaph>Demo:</Paraghaph> <StyledLink href={ linkDemo } target="_blank">{ linkDemo }</StyledLink></>
+            : ""}
+            {linkRepo ? 
+                <><Paraghaph>Code:</Paraghaph> <StyledLink href={ linkRepo } target="_blank">{ linkRepo }</StyledLink></>
+            : ""}
         </LinkWrapper>
     </PortfolioItemStyled>
 );

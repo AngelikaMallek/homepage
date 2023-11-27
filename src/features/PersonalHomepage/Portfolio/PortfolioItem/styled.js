@@ -2,11 +2,17 @@ import styled from "styled-components";
 
 export const PortfolioItemStyled = styled.div`
     border-radius: 4px;
-    border: 6px solid var(--diff-bg-neutral, rgba(209, 213, 218, 0.30));
+    border: 6px solid var(--diff-bg-neutral, ${({ theme }) => theme.colors.semiGrey});
     box-shadow: 0px 16px 58px 0px rgba(9, 10, 51, 0.03), 0px -2px 50px 0px rgba(9, 10, 51, 0.02);
     background-color: ${({ theme }) => theme.backgroundItem};
     transition: background 0.3s;
     padding: 56px;
+    transition: border 0.3s;
+    max-width: 582px;
+
+    &:hover {
+        border: 6px solid var(--diff-bg-neutral, ${({ theme }) => theme.colors.anakiwa});
+    }
 
     @media(max-width: ${({ theme }) => theme.breakpoints.mobile}) {
         padding: 24px;
@@ -56,6 +62,7 @@ export const StyledLink = styled.a`
     font-size: 18px;
     line-height: 140%;
     letter-spacing: 0.9px;
+    word-break: break-all;
 
     @media(max-width: ${({ theme }) => theme.breakpoints.mobile}) {
         font-size: 14px;

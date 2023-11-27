@@ -9,7 +9,6 @@ import HeaderPortfolio from "./HeaderPortfolio";
 const PersonalHomepage = () => (
     <Container>
       <Header />
-      <main>
         <Section 
           title="My skillset includes 🛠️" 
           body={skills} 
@@ -22,7 +21,6 @@ const PersonalHomepage = () => (
           <HeaderPortfolio />
           <Portfolio />
         </section>
-      </main>
       <Footer />
     </Container>
 )
