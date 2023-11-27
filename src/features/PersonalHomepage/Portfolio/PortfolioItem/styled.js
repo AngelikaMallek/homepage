@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-export const PortfolioItemStyled = styled.div`
+export const PortfolioItemStyled = styled.li`
     border-radius: 4px;
     border: 6px solid var(--diff-bg-neutral, ${({ theme }) => theme.colors.semiGrey});
     box-shadow: 0px 16px 58px 0px rgba(9, 10, 51, 0.03), 0px -2px 50px 0px rgba(9, 10, 51, 0.02);
@@ -9,6 +9,7 @@ export const PortfolioItemStyled = styled.div`
     padding: 56px;
     transition: border 0.3s;
     max-width: 582px;
+    list-style: none;
 
     &:hover {
         border: 6px solid var(--diff-bg-neutral, ${({ theme }) => theme.colors.anakiwa});

@@ -26,16 +26,16 @@ const Portfolio = () => {
             try {
                 return (
                     <>
-                    <PortfolioWrapper>
-                        {repositories ? repositories.map((repository) => (
-                            <PortfolioItem 
-                                key={repository.id}
-                                title={repository.name}
-                                description={repository.description}
-                                linkDemo={repository.homepage}
-                                linkRepo={repository.html_url}
-                            />
-                        )) : ""}
+                        <PortfolioWrapper>
+                            {repositories ? repositories.map((repository) => (
+                                <PortfolioItem 
+                                    key={repository.id}
+                                    title={repository.name}
+                                    description={repository.description}
+                                    linkDemo={repository.homepage}
+                                    linkRepo={repository.html_url}
+                                />
+                            )) : ""}
                         </PortfolioWrapper>
                     </>
                 );
