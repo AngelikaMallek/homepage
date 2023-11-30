@@ -4,22 +4,20 @@ import { ReactComponent as Envelope } from "./envelope.svg";
 import ModeButton from "./ModeButton";
 import { aboutMe } from "../aboutMe";
 
-const Header = () => {
-    return(
-        <StyledHeader>
-            <ModeButton />
-            <WrapperImage src={person} alt="Angelika Mallek"/>
-            <WrapperDescription>
-                <Paragraph>THIS IS</Paragraph>
-                <Name>{aboutMe.name}</Name>
-                <Description>{aboutMe.description}</Description>
-                <Button href={aboutMe.url} title={aboutMe.url}>
-                    <Envelope />
-                    Hire Me
-                </Button>
-            </WrapperDescription>
-        </StyledHeader>
-    )
-}
+const Header = () => (
+    <StyledHeader>
+        <ModeButton />
+        <WrapperImage src={person} alt="Angelika Mallek"/>
+        <WrapperDescription>
+            <Paragraph>THIS IS</Paragraph>
+            <Name>{aboutMe.name}</Name>
+            <Description>{aboutMe.description}</Description>
+            <Button href={aboutMe.url} title={aboutMe.url}>
+                <Envelope />
+                Hire Me
+            </Button>
+        </WrapperDescription>
+    </StyledHeader>
+)
 
 export default Header;

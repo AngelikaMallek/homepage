@@ -90,6 +90,8 @@ export const Button = styled.a`
     background-color: ${({ theme }) => theme.colors.scienceBlue};
     text-decoration: none;
     transition: background 0.3s;
+    font-weight: 600;
+    letter-spacing: 1.003px;
 
     &:hover {
         background-color: ${({ theme }) => theme.colors.azureRadiance};

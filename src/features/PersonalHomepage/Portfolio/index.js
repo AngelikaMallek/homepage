@@ -1,7 +1,7 @@
 import PortfolioItem from "./PortfolioItem";
 import { PortfolioWrapper } from "./styled"
-import Loading from "../../../common/Loading";
-import Error from "../../../common/Error";
+import Loading from "./Loading";
+import Error from "./Error";
 import { useDispatch, useSelector } from "react-redux";
 import { fetchRepos, selectRepositories, selectRepositoriesStatus } from "./portfolioSlice";
 import { useEffect } from "react";
