@@ -21,7 +21,6 @@ export const StyledHeader = styled.header`
 
 export const WrapperImage = styled.img`
     width: 30vw;
-    height: 30vw;
     border-radius: 50%;
     min-width: 132px;
     min-height: 132px;
