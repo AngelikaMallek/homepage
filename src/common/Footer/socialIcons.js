@@ -17,12 +17,12 @@ export const socials = [
     },
     {
         name: 'Linkedin',
-        url: 'https://pl.linkedin.com/in/angelika-mallek-b10a61262?trk=people-guest_people_search-card',
+        url: 'https://www.linkedin.com/in/angelika-krefta-b10a61262/',
         Icon: IconStyle(LinkedinIcon),
     },
     {
         name: 'Instagram',
-        url: 'https://www.instagram.com/angelikamallek/',
+        url: 'https://www.instagram.com/angelikakrefta/?next=%2F',
         Icon: IconStyle(InstaIcon),
     },
 ]
