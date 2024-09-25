@@ -7,7 +7,7 @@ import { aboutMe } from "../aboutMe";
 const Header = () => (
     <StyledHeader>
         <ModeButton />
-        <WrapperImage src={person} alt="Angelika Mallek"/>
+        <WrapperImage src={person} alt="Angelika Krefta"/>
         <WrapperDescription>
             <Paragraph>THIS IS</Paragraph>
             <Name>{aboutMe.name}</Name>
