@@ -1,21 +1,21 @@
 {
   "files": {
-    "main.js": "/personal-homepage/static/js/main.1ddbcbfb.js",
-    "static/js/787.162bc9a0.chunk.js": "/personal-homepage/static/js/787.162bc9a0.chunk.js",
-    "static/media/person.jpg": "/personal-homepage/static/media/person.64922f19fe37b311da79.jpg",
-    "static/media/instagram.svg": "/personal-homepage/static/media/instagram.fe9c1fe7cac6586ad4ad9cb84c951c94.svg",
-    "static/media/sun.svg": "/personal-homepage/static/media/sun.87ae75d5923ead177a1f023c4875ae5d.svg",
-    "static/media/gitHub.svg": "/personal-homepage/static/media/gitHub.5b96574253cf7ee78ecbc5ee5a441fdc.svg",
-    "index.html": "/personal-homepage/index.html",
-    "static/media/icon.svg": "/personal-homepage/static/media/icon.0307684b8c46ec3c19b7f94d9b9fb5c2.svg",
-    "static/media/linkedin.svg": "/personal-homepage/static/media/linkedin.c5e3efc61a8d31661b27edc2f7dd757e.svg",
-    "static/media/envelope.svg": "/personal-homepage/static/media/envelope.bac5bf8471b29eaa9902ee0d791611c7.svg",
-    "static/media/facebook.svg": "/personal-homepage/static/media/facebook.f5cdee6baaf44e576b9514321af73546.svg",
-    "static/media/Ellipse.svg": "/personal-homepage/static/media/Ellipse.28e4b218656018cf8a4bd30e2114f466.svg",
-    "main.1ddbcbfb.js.map": "/personal-homepage/static/js/main.1ddbcbfb.js.map",
-    "787.162bc9a0.chunk.js.map": "/personal-homepage/static/js/787.162bc9a0.chunk.js.map"
+    "main.js": "/homepage/static/js/main.19b1d031.js",
+    "static/js/787.162bc9a0.chunk.js": "/homepage/static/js/787.162bc9a0.chunk.js",
+    "static/media/person.jpg": "/homepage/static/media/person.64922f19fe37b311da79.jpg",
+    "static/media/instagram.svg": "/homepage/static/media/instagram.fe9c1fe7cac6586ad4ad9cb84c951c94.svg",
+    "static/media/sun.svg": "/homepage/static/media/sun.87ae75d5923ead177a1f023c4875ae5d.svg",
+    "static/media/gitHub.svg": "/homepage/static/media/gitHub.5b96574253cf7ee78ecbc5ee5a441fdc.svg",
+    "index.html": "/homepage/index.html",
+    "static/media/icon.svg": "/homepage/static/media/icon.0307684b8c46ec3c19b7f94d9b9fb5c2.svg",
+    "static/media/linkedin.svg": "/homepage/static/media/linkedin.c5e3efc61a8d31661b27edc2f7dd757e.svg",
+    "static/media/envelope.svg": "/homepage/static/media/envelope.bac5bf8471b29eaa9902ee0d791611c7.svg",
+    "static/media/facebook.svg": "/homepage/static/media/facebook.f5cdee6baaf44e576b9514321af73546.svg",
+    "static/media/Ellipse.svg": "/homepage/static/media/Ellipse.28e4b218656018cf8a4bd30e2114f466.svg",
+    "main.19b1d031.js.map": "/homepage/static/js/main.19b1d031.js.map",
+    "787.162bc9a0.chunk.js.map": "/homepage/static/js/787.162bc9a0.chunk.js.map"
   },
   "entrypoints": [
-    "static/js/main.1ddbcbfb.js"
+    "static/js/main.19b1d031.js"
   ]
 }
