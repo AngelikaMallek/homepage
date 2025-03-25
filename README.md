@@ -1,7 +1,7 @@
 # Personal Homepage
 
 ## Demo
-You can visit my website here: [personal-homepage](https://angelikamallek.github.io/personal-homepage/)
+You can visit my website here: [personal-homepage](https://angelikamallek.github.io/homepage/)
 
 ![Animation](Animation.gif)
 
