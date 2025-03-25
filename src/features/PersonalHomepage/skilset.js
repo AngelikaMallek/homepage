@@ -21,11 +21,13 @@ export const skills = [
   "Redux-Saga",
   "Git",
   "CSS Flexbox",
+  "Database operations",
+  "Experience with Streamsoft",
+  "Knowledge of the MS Office suite (Power Query, administrative panel)",
 ];
 
 export const skillsToLearn = [
   "TypeScript",
-  "Node.js",
-  "React Context",
-  "JS classes",
+  "C#",
+  "Java",
 ];
